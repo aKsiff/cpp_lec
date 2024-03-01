@@ -1,0 +1,3 @@
+/Users/ve/Documents/itmo2023/cpp/cpp_lec/cmake-build-debug/CMakeFiles/cpp_lec.dir
+/Users/ve/Documents/itmo2023/cpp/cpp_lec/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/ve/Documents/itmo2023/cpp/cpp_lec/cmake-build-debug/CMakeFiles/rebuild_cache.dir

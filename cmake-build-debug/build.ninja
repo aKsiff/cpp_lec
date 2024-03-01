@@ -1,0 +1,145 @@
+## This file contains all the build statements describing the
+# compilation DAG.
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# 
+# Which is the root file.
+# =============================================================================
+
+# =============================================================================
+# Project: cpp_lec
+# Configurations: Debug
+# =============================================================================
+
+#############################################
+# Minimal version of Ninja required by this file
+
+ninja_required_version = 1.5
+
+
+#############################################
+# Set configuration variable for custom commands.
+
+CONFIGURATION = Debug
+# =============================================================================
+# Include auxiliary files.
+
+
+#############################################
+# Include rules file.
+
+include CMakeFiles/rules.ninja
+
+# =============================================================================
+
+#############################################
+# Logical path to working directory; prefix for absolute paths.
+
+cmake_ninja_workdir = /Users/ve/Documents/itmo/2SEM/cpp_lec/cmake-build-debug/
+# =============================================================================
+# Object build statements for EXECUTABLE target cpp_lec
+
+
+#############################################
+# Order-only phony target for cpp_lec
+
+build cmake_object_order_depends_target_cpp_lec: phony || CMakeFiles/cpp_lec.dir
+
+build CMakeFiles/cpp_lec.dir/lec1_2.c.o: C_COMPILER__cpp_lec_Debug /Users/ve/Documents/itmo/2SEM/cpp_lec/lec1_2.c || cmake_object_order_depends_target_cpp_lec
+  DEP_FILE = CMakeFiles/cpp_lec.dir/lec1_2.c.o.d
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.0 -fcolor-diagnostics -std=gnu2x
+  OBJECT_DIR = CMakeFiles/cpp_lec.dir
+  OBJECT_FILE_DIR = CMakeFiles/cpp_lec.dir
+
+build CMakeFiles/cpp_lec.dir/lec5_6.c.o: C_COMPILER__cpp_lec_Debug /Users/ve/Documents/itmo/2SEM/cpp_lec/lec5_6.c || cmake_object_order_depends_target_cpp_lec
+  DEP_FILE = CMakeFiles/cpp_lec.dir/lec5_6.c.o.d
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.0 -fcolor-diagnostics -std=gnu2x
+  OBJECT_DIR = CMakeFiles/cpp_lec.dir
+  OBJECT_FILE_DIR = CMakeFiles/cpp_lec.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target cpp_lec
+
+
+#############################################
+# Link the executable cpp_lec
+
+build cpp_lec: C_EXECUTABLE_LINKER__cpp_lec_Debug CMakeFiles/cpp_lec.dir/lec1_2.c.o CMakeFiles/cpp_lec.dir/lec5_6.c.o
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.0
+  OBJECT_DIR = CMakeFiles/cpp_lec.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = cpp_lec
+  TARGET_PDB = cpp_lec.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/ve/Documents/itmo/2SEM/cpp_lec/cmake-build-debug && /private/var/folders/lx/hkl9htsj229ds63jdbs_0lnm0000gn/T/AppTranslocation/390D24AD-44F9-4F32-A5FD-6D9EDA60EBB8/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build edit_cache: phony CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/ve/Documents/itmo/2SEM/cpp_lec/cmake-build-debug && /private/var/folders/lx/hkl9htsj229ds63jdbs_0lnm0000gn/T/AppTranslocation/390D24AD-44F9-4F32-A5FD-6D9EDA60EBB8/d/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/ve/Documents/itmo/2SEM/cpp_lec -B/Users/ve/Documents/itmo/2SEM/cpp_lec/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Target aliases.
+
+# =============================================================================
+# Folder targets.
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/ve/Documents/itmo/2SEM/cpp_lec/cmake-build-debug
+
+build all: phony cpp_lec
+
+# =============================================================================
+# Built-in targets
+
+
+#############################################
+# Re-run CMake if any of its inputs changed.
+
+build build.ninja: RERUN_CMAKE | /Users/ve/Documents/itmo/2SEM/cpp_lec/CMakeLists.txt /private/var/folders/lx/hkl9htsj229ds63jdbs_0lnm0000gn/T/AppTranslocation/390D24AD-44F9-4F32-A5FD-6D9EDA60EBB8/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCInformation.cmake /private/var/folders/lx/hkl9htsj229ds63jdbs_0lnm0000gn/T/AppTranslocation/390D24AD-44F9-4F32-A5FD-6D9EDA60EBB8/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /private/var/folders/lx/hkl9htsj229ds63jdbs_0lnm0000gn/T/AppTranslocation/390D24AD-44F9-4F32-A5FD-6D9EDA60EBB8/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /private/var/folders/lx/hkl9htsj229ds63jdbs_0lnm0000gn/T/AppTranslocation/390D24AD-44F9-4F32-A5FD-6D9EDA60EBB8/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /private/var/folders/lx/hkl9htsj229ds63jdbs_0lnm0000gn/T/AppTranslocation/390D24AD-44F9-4F32-A5FD-6D9EDA60EBB8/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /private/var/folders/lx/hkl9htsj229ds63jdbs_0lnm0000gn/T/AppTranslocation/390D24AD-44F9-4F32-A5FD-6D9EDA60EBB8/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /private/var/folders/lx/hkl9htsj229ds63jdbs_0lnm0000gn/T/AppTranslocation/390D24AD-44F9-4F32-A5FD-6D9EDA60EBB8/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /private/var/folders/lx/hkl9htsj229ds63jdbs_0lnm0000gn/T/AppTranslocation/390D24AD-44F9-4F32-A5FD-6D9EDA60EBB8/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-C.cmake /private/var/folders/lx/hkl9htsj229ds63jdbs_0lnm0000gn/T/AppTranslocation/390D24AD-44F9-4F32-A5FD-6D9EDA60EBB8/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /private/var/folders/lx/hkl9htsj229ds63jdbs_0lnm0000gn/T/AppTranslocation/390D24AD-44F9-4F32-A5FD-6D9EDA60EBB8/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Clang.cmake /private/var/folders/lx/hkl9htsj229ds63jdbs_0lnm0000gn/T/AppTranslocation/390D24AD-44F9-4F32-A5FD-6D9EDA60EBB8/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/GNU.cmake /private/var/folders/lx/hkl9htsj229ds63jdbs_0lnm0000gn/T/AppTranslocation/390D24AD-44F9-4F32-A5FD-6D9EDA60EBB8/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-C.cmake /private/var/folders/lx/hkl9htsj229ds63jdbs_0lnm0000gn/T/AppTranslocation/390D24AD-44F9-4F32-A5FD-6D9EDA60EBB8/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-C.cmake /private/var/folders/lx/hkl9htsj229ds63jdbs_0lnm0000gn/T/AppTranslocation/390D24AD-44F9-4F32-A5FD-6D9EDA60EBB8/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang.cmake /private/var/folders/lx/hkl9htsj229ds63jdbs_0lnm0000gn/T/AppTranslocation/390D24AD-44F9-4F32-A5FD-6D9EDA60EBB8/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin-Initialize.cmake /private/var/folders/lx/hkl9htsj229ds63jdbs_0lnm0000gn/T/AppTranslocation/390D24AD-44F9-4F32-A5FD-6D9EDA60EBB8/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin.cmake /private/var/folders/lx/hkl9htsj229ds63jdbs_0lnm0000gn/T/AppTranslocation/390D24AD-44F9-4F32-A5FD-6D9EDA60EBB8/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake
+  pool = console
+
+
+#############################################
+# A missing CMake input file is not an error.
+
+build /Users/ve/Documents/itmo/2SEM/cpp_lec/CMakeLists.txt /private/var/folders/lx/hkl9htsj229ds63jdbs_0lnm0000gn/T/AppTranslocation/390D24AD-44F9-4F32-A5FD-6D9EDA60EBB8/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCInformation.cmake /private/var/folders/lx/hkl9htsj229ds63jdbs_0lnm0000gn/T/AppTranslocation/390D24AD-44F9-4F32-A5FD-6D9EDA60EBB8/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /private/var/folders/lx/hkl9htsj229ds63jdbs_0lnm0000gn/T/AppTranslocation/390D24AD-44F9-4F32-A5FD-6D9EDA60EBB8/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /private/var/folders/lx/hkl9htsj229ds63jdbs_0lnm0000gn/T/AppTranslocation/390D24AD-44F9-4F32-A5FD-6D9EDA60EBB8/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /private/var/folders/lx/hkl9htsj229ds63jdbs_0lnm0000gn/T/AppTranslocation/390D24AD-44F9-4F32-A5FD-6D9EDA60EBB8/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /private/var/folders/lx/hkl9htsj229ds63jdbs_0lnm0000gn/T/AppTranslocation/390D24AD-44F9-4F32-A5FD-6D9EDA60EBB8/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /private/var/folders/lx/hkl9htsj229ds63jdbs_0lnm0000gn/T/AppTranslocation/390D24AD-44F9-4F32-A5FD-6D9EDA60EBB8/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /private/var/folders/lx/hkl9htsj229ds63jdbs_0lnm0000gn/T/AppTranslocation/390D24AD-44F9-4F32-A5FD-6D9EDA60EBB8/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-C.cmake /private/var/folders/lx/hkl9htsj229ds63jdbs_0lnm0000gn/T/AppTranslocation/390D24AD-44F9-4F32-A5FD-6D9EDA60EBB8/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /private/var/folders/lx/hkl9htsj229ds63jdbs_0lnm0000gn/T/AppTranslocation/390D24AD-44F9-4F32-A5FD-6D9EDA60EBB8/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Clang.cmake /private/var/folders/lx/hkl9htsj229ds63jdbs_0lnm0000gn/T/AppTranslocation/390D24AD-44F9-4F32-A5FD-6D9EDA60EBB8/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/GNU.cmake /private/var/folders/lx/hkl9htsj229ds63jdbs_0lnm0000gn/T/AppTranslocation/390D24AD-44F9-4F32-A5FD-6D9EDA60EBB8/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-C.cmake /private/var/folders/lx/hkl9htsj229ds63jdbs_0lnm0000gn/T/AppTranslocation/390D24AD-44F9-4F32-A5FD-6D9EDA60EBB8/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-C.cmake /private/var/folders/lx/hkl9htsj229ds63jdbs_0lnm0000gn/T/AppTranslocation/390D24AD-44F9-4F32-A5FD-6D9EDA60EBB8/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang.cmake /private/var/folders/lx/hkl9htsj229ds63jdbs_0lnm0000gn/T/AppTranslocation/390D24AD-44F9-4F32-A5FD-6D9EDA60EBB8/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin-Initialize.cmake /private/var/folders/lx/hkl9htsj229ds63jdbs_0lnm0000gn/T/AppTranslocation/390D24AD-44F9-4F32-A5FD-6D9EDA60EBB8/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin.cmake /private/var/folders/lx/hkl9htsj229ds63jdbs_0lnm0000gn/T/AppTranslocation/390D24AD-44F9-4F32-A5FD-6D9EDA60EBB8/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake: phony
+
+
+#############################################
+# Clean all the built files.
+
+build clean: CLEAN
+
+
+#############################################
+# Print all primary targets available.
+
+build help: HELP
+
+
+#############################################
+# Make the all target the default.
+
+default all
